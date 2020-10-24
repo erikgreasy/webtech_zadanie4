@@ -138,13 +138,16 @@ function validateForm( inputs ) {
 function isInputValid( input ) {
     let value = input.value
 
-    if( value.trim == '' ) {
+    if( value.trim() == '' ) {
         makeInvalid( input )
         return false
-    } else if( value > 9 || value < 1) {
+    } else if( !value.match('[1-9]')) {
         makeInvalid( input )
         return false
-    } 
+    } else if( value > 9 || value < 1 ) {
+        makeInvalid( input )
+        return false    
+    }
 
     makeValid( input )
     return true
