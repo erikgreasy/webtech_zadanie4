@@ -6,7 +6,7 @@
     <title>Zadanie 4 | Erik Masný</title>
 
     <!-- FONTS -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -16,12 +16,57 @@
 
 </head>
 <body>
-    <main>
+    
+    <!-- Modal -->
+    <div class="modal" id="bestModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">This s whats ya get bra</h5>
+                <button class="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-center">
+                    <!-- TABLE TO BE INSERTED HERE -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <main class="container">
+        <div class="jumbotron mt-5">
+            <h1 class="mb-4 text-center ">The juiciest form you ever submited!</h1>
+            <form action="" id="bestFormEver" class="form">
+                <div class="form-group">
+                    <label for="value_x">
+                        Hodnota x:
+                    </label>
+                    <input type="number" name="value_x" id="value_x" class="form-control" min="1" max="9">
+                    <div class="invalid-feedback text-left">
+                        Prosím zadajte číslo od 1 po 9
+                    </div>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="value_y">
+                        Hodnota Y
+                    </label>
+                    <input type="number" name="value_y" id="value_y" class="form-control" min="1" max="9">
+                    <div class="invalid-feedback text-left">
+                        Prosím zadajte číslo od 1 po 9
+                    </div>
+                </div>
+                
 
+                <input type="submit" class="btn btn-info btn-block">
+            </form>
+        </div>
     </main>
 
     <!-- SCRIPTS -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
     
 </body>
 </html>

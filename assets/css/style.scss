@@ -1,0 +1,47 @@
+body, html {
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-color: purple;
+}
+
+#bestModal {
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+* {
+    outline: none !important;
+}
+
+.jumbotron {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+table {
+    td, th {
+
+        padding: 0.1rem !important;
+        @media (min-width: 720px) {
+            padding: 0.5rem !important;
+
+        }
+    }
+}
+.modal {
+    overflow: scroll;
+}
+
+.modal-dialog {
+    max-width: 100%;
+}
+
+@media (min-width: 720px) {
+
+    .modal-dialog {
+        max-width: 600px;
+    }
+}
